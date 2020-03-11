@@ -40,8 +40,6 @@ class MobiwikspiderSpider(scrapy.Spider):
         
         return item
 
-        pass
-
     def parse(self, response):
         if(response.status != 200) :
             return
