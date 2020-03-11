@@ -20,4 +20,15 @@ class MobiwikOfferItem(scrapy.Item):
     isOffline = scrapy.Field()
     lastUpdated = scrapy.Field(serializer=str)
 
+class OfferItem(scrapy.Item):
+    typeId = scrapy.Field()#类型id
+    offerId = scrapy.Field()#offerid跳转用
+    merchantName = scrapy.Field()#产品名字
+    productTitle = scrapy.Field()#title
+    logoUrl = scrapy.Field()
+    couponCode = scrapy.Field()
+    endDate = scrapy.Field()
+    startDate = scrapy.Field()
+    lastUpdated = scrapy.Field(serializer=str)
+
 

@@ -8,6 +8,8 @@
 from scrapy import signals
 from in_catch.settings import USER_AGENT_LIST
 import random
+import time
+import logging
 
 
 class InCatchSpiderMiddleware(object):
